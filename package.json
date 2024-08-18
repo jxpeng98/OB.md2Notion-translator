@@ -1,8 +1,8 @@
 {
-  "name": "@tryfabric/martian",
-  "version": "1.2.4",
+  "name": "@jxpeng98/martian",
+  "version": "1.2.6",
   "description": "Converts Markdown to Notion Blocks and RichText",
-  "repository": "https://github.com/tryfabric/martian",
+  "repository": "https://github.com/jxpeng98/Obsidian.md2Notion-translator",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27",
-    "@types/node": "^15.12.4",
+    "@types/node": "^17.0.45",
     "gts": "^3.1.0",
     "jest": "^27.0.4",
     "linguist-languages": "^7.15.0",

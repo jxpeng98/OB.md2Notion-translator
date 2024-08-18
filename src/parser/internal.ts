@@ -211,7 +211,7 @@ function parseTable(node: md.Table): notion.Block[] {
 }
 
 function parseMath(node: md.Math): notion.Block {
-  const textWithKatexNewlines = node.value.split('\n').join('\\\\\n');
+  const textWithKatexNewlines = node.value.split('\n').join('\n');
   return notion.equation(textWithKatexNewlines);
 }
 
