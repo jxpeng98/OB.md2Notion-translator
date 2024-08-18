@@ -213,9 +213,9 @@ const hello = "hello";
           notion.richText('C_L', {type: 'equation'}),
           notion.richText(') like the following\nequation.'),
         ]),
-        notion.equation('L = \\frac{1}{2} \\rho v^2 S C_L\\\\\ntest'),
+        notion.equation('L = \\frac{1}{2} \\rho v^2 S C_L \\\\\ntest'),
       ];
-
+      console.log(expected);
       expect(actual).toStrictEqual(expected);
     });
   });
