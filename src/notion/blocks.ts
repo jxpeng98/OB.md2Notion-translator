@@ -34,6 +34,12 @@ export function code(
   text: RichText[],
   lang: supportedCodeLang = 'plain text'
 ): Block {
+  // remove annotations from code blocks if they exist
+  text.forEach(item => {
+    if (item.type === 'text' && item.annotations) {
+      delete item.annotations;
+    }
+  });
   return {
     object: 'block',
     type: 'code',
